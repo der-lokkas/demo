@@ -4,12 +4,12 @@ threadsafe: yes
 
 handlers:
   - url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
-    static_files: dist/helloworld/\1
-    upload: dist/helloworld/(.*)(|\.map)
+    static_files: dist/demo-app/\1
+    upload: dist/demo-app/(.*)(|\.map)
 
   - url: /(.*)
-    static_files: dist/helloworld/index.html
-    upload: dist/helloworld/index.html
+    static_files: dist/demo-app/index.html
+    upload: dist/demo-app/index.html
 
 skip_files:
   - e2e/
